@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Informasi Miyabi</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <div class="container">
+        <header class="container-awalan">
+          <ul class="ul-awalan">
+            <li class="li-awalan">Kepala Seksi Operasi Khusus Hollow 6</li>
+            <li class="li-awalan">Void Hunter</li>
+            <li class="li-awalan">Miyabi Hoshimi</li>
+          </ul>
+        </header>
+
+        <main class="container-coda">
+          <img src="MIYABI.jpg" alt="Miyabi Hoshimi" class="img-coda" />
+        </main>
+
+        <footer class="container-reorientasi">
+          <h1 class="H1-REORIENTASI">Terima Kasih</h1>
+        </footer>
+      </div>
+      <section class="chat-widget" aria-label="Chat tentang Miyabi">
+        <div class="chat-panel" id="chat-panel" hidden>
+          <div class="chat-header">
+            <div>
+              <h2>Tanya Miyabi</h2>
+              <p>Ada yang ingin kamu ketahui?</p>
+            </div>
+            <button class="chat-close" id="chat-close" type="button" aria-label="Tutup chat">×</button>
+          </div>
+          <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-relevant="additions">
+            <p class="chat-bubble bot-message">Hai! Aku bisa membantu menjawab pertanyaan tentang informasi yang ada di halaman ini.</p>
+          </div>
+          <div class="quick-questions" aria-label="Pertanyaan cepat">
+            <button type="button" data-question="Siapa Miyabi?">Siapa Miyabi?</button>
+            <button type="button" data-question="Apa jabatannya?">Apa jabatannya?</button>
+            <button type="button" data-question="Apa itu Void Hunter?">Apa itu Void Hunter?</button>
+          </div>
+          <form class="chat-form" id="chat-form">
+            <label class="sr-only" for="chat-input">Tulis pesan</label>
+            <input id="chat-input" name="message" type="text" placeholder="Tulis pesan..." autocomplete="off" maxlength="300" required />
+            <button type="submit">Kirim</button>
+          </form>
+        </div>
+        <button class="chat-toggle" id="chat-toggle" type="button" aria-controls="chat-panel" aria-expanded="false">
+          <span aria-hidden="true">✦</span> Tanya Miyabi
+        </button>
+      </section>
+      <script src="script.js" defer></script>
+    </body>
+</html>
