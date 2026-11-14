@@ -43,6 +43,10 @@ function getReply(message) {
     return "Sama-sama! Ada hal lain yang ingin kamu tanyakan?";
   }
 
+  if (question.includes("my bini") || question.includes("istri")) {
+    return "gausah mengada ngada,ini istri developernya, bukan istri kamu.";
+  }
+  
   return "Aku belum punya informasi itu. Coba tanyakan nama, jabatan, atau sebutan Void Hunter Miyabi.";
 }
 
